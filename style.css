@@ -93,3 +93,10 @@ footer{
         left: 80%;
     }
 }
+
+.play-btn{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
