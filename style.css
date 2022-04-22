@@ -37,26 +37,33 @@ header p{
 }
 .pads >div{
     height: 7rem;
+    
    
 }
 .pad1{
     background-color: #00ffff;
+    /* animation: padAnimation1 1s ease-out  ; */
 }
 .pad2{
     background-color: #0000ff;
+    /* animation: padAnimation2 1s ease-out  ; */
 }
 .pad3{
     background-color: #00ff26;
+    /* animation: padAnimation3 1s ease-out  ; */
 }
 .pad4{
     background-color: #ff00ee;
+    /* animation: padAnimation4 1s ease-out  ; */
 }
 
 .pad5{
     background-color: #9dff00;
+    /* animation: padAnimation5 1s ease-out  ; */
 }
 .pad6{
     background-color: #ff0015;
+    /* animation: padAnimation6 1s ease-out  ; */
 }
 
 .visual > div{
@@ -76,6 +83,30 @@ footer{
     margin-bottom: -1rem;
     overflow: hidden;
     bottom: 0%;
+}
+@keyframes pad1 {
+    from{background-color: #00ffff;}
+    to{background-color: #00adfd;}
+}
+@keyframes pad2 {
+    from{background-color: #0000ff;}
+    to{background-color: #0073ff;}
+}
+@keyframes pad3 {
+    from{background-color: #00ff26;}
+    to{background-color: #fff200;}
+}
+@keyframes pad4 {
+    from{background-color: #ff00ee;}
+    to{background-color:  #b300ff;}
+}
+@keyframes pad5 {
+    from{background-color: #9dff00;}
+    to{background-color: #e8ff65;}
+}
+@keyframes pad6 {
+    from{background-color: #ff0015;}
+    to{background-color: #ff0062;}
 }
 
 @keyframes jump{
@@ -196,4 +227,19 @@ thead {
 }
 
 /*  */
+.visual{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.intro{
+    max-width: 50%;
+    animation: pulse 1s ease infinite;
+    
+}
 
+@keyframes pulse {
+    from{transform: scale(0.8); opacity: 0.5;}
+    to{transform: scale(1.2); opacity: 1; color: black; font-weight: bold;}
+}
